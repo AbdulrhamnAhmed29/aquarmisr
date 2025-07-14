@@ -1,0 +1,63 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.planss {
+  background-image: radial-gradient(at 88% 40%,
+      hsla(240, 15%, 9%, 1) 0px,
+      transparent 85%),
+    radial-gradient(at 49% 30%, rgb(0, 0, 0) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, rgb(0, 0, 0) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, hsl(190, 38%, 6%) 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsl(186, 31%, 18%) 0px, transparent 85%),
+    radial-gradient(at 100% 99%, hsl(0, 0%, 0%) 0px, transparent 85%);
+}
+
+
+.plan-image {
+  position: absolute;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
+transition: all 1s ease-in-out;
+height: 100%;
+cursor: pointer;
+}
+.plan-image:hover{
+  transform: scale(1.01);
+}

@@ -1,0 +1,58 @@
+[
+  {
+ 
+    "title": "فيلا فاخرة بالتجمع",
+    "price": "3,500,000 جنيه",
+    "location": "القاهرة الجديدة",
+    "image": "/images/hero-4.png"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/img(1).jpg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/OIP (1).jpg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/prop(4).jpg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/prop (1).jpg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/prop(5).jpeg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/contact.jpg"
+  },
+  {
+    "id": 2,
+    "title": "شقة على النيل",
+    "price": "1,800,000 جنيه",
+    "location": "المعادي",
+    "image": "/images/property (7).jpg"
+  }
+]

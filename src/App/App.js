@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route,  } from "react-router-dom";
 import ClockLoader from "react-spinners/ClockLoader";
-import Home from './/Component/Home/Home';
-import './index.css'
+import Home from '../Component/Home';
+import '../index.css'
 
 const App = () => {
   const [load, setload] = useState(false);
