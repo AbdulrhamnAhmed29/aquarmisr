@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 
 // Import Swiper styles
@@ -22,8 +23,9 @@ export default function Offer() {
 
 
     return (
+        <>
         <div className='p-5  planss'>
-            <h2 id='plans' className='text text-center  '>المخططات</h2>
+            <h2 id='plans' className='text text-center  '>العروض</h2>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -43,15 +45,26 @@ export default function Offer() {
 
                 {post.map((el, index) => (
                     <SwiperSlide key={index}>
+                        <Link
+                            key={index}
+                            to={`/image/${el.id}`}
+                            state={el}
+                        >
+                            <img src={el.image} className=' w-100 plan-image' />
 
-                        <a href="">  <img src={el.image} className='rounded-5 w-100 plan-image' />
-                        </a>
+                        </Link>
+
                     </SwiperSlide>
+                    
 
                 ))}
 
 
             </Swiper>
+            
         </div>
+        <hr />
+        <hr />
+        </>
     );
 }

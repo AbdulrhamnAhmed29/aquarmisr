@@ -10,18 +10,23 @@ function IndividualIntervalsExample() {
       duration: 3000, once: true
     });
   }, []);
-
   return (
-    <section className='panner' id="home">
-      <div className="p-5 text-center" data-aos="fade-right" >
-        <h1 className="text-center  text-white">المنصة الأولى في مصر تستخدم
-          الذكاء الاصطناعي بالعقارات</h1>
-        <p className="text-white pw-bold">استكشف قوائم العقارات الواسعة حسب الفئة من خلال بحثنا سهل الاستخدام. ابحث عن شريكك المثالي!
-        </p>
-        <a href="#plans"> <button className="button2">اضغط لعروض العقارات </button></a>
-      </div>
+    <div className="video-background" data-aos="fade-up mt-5">
+      <video autoPlay muted loop playsInline className="video">
+        <source src="/images/hero.mp4" type="video/mp4" />
+        المتصفح لا يدعم تشغيل الفيديو
+      </video>
+      <div className="overlay"></div>
 
-    </section>
+      <div className="content" data-aos="fade-left">
+        <h2 className="fs-1">مرحبا بك في عقار يامصر </h2>
+        <h2 className="fs-1">اكتشف أفضل الفرص العقارية في مصر</h2>
+        <p>شقق – فيلات – أراضي – وحدات تجارية</p>
+        <p>كل ما تحتاجه في مكان واحد... بكل ثقة وشفافية</p>
+      </div>
+    </div>
+
+
   );
 }
 

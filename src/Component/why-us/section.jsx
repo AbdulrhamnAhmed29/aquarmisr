@@ -1,6 +1,6 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './section.css'
-import {  Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import AOS from 'aos';
 
 
@@ -21,7 +21,7 @@ const Section = () => {
         <h2 className='text text-white text-center p-5' >لِمَاذا نَحنُ؟</h2>
 
         <div className='card-why-us  ' data-aos="fade-up">
-          <div class="card mx-auto mb-5  " >
+          <div class="card-sec  mx-auto mb-5  " >
             <div class="card__border"></div>
             <div class="card_title__container">
               <h2 class="card_title text fs-4 pt-1">أَكثَرُ أَمانًا</h2>
@@ -36,7 +36,7 @@ const Section = () => {
             </p>
 
           </div>
-          <div class="card mx-auto mb-5 " >
+          <div class="card-sec  mx-auto mb-5 " >
             <div class="card__border"></div>
             <div class="card_title__container">
               <h2 class="card_title text fs-4 pt-1">أدقُّ بحثٍ عقاريٍّ في مصر</h2>
@@ -48,7 +48,7 @@ const Section = () => {
 
 
           </div>
-          <div class="card mx-auto mb-5 " >
+          <div class="card-sec  mx-auto mb-5 " >
             <div class="card__border"></div>
             <div class="card_title__container">
               <h2 class="card_title text  fs-4 pt-1"> موثوقةٌ من آلافِ العملاء   </h2>
@@ -63,9 +63,12 @@ const Section = () => {
           </div>
 
         </div>
-      <hr className='w-100'/>
+
       </Container>
+      <hr />
+      <hr />
     </section>
+
 
   )
 }

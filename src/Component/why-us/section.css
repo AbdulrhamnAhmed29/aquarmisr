@@ -1,5 +1,5 @@
 /* From Uiverse.io by iconicchandu */
-.card {
+.card-sec {
     --white: hsl(0, 0%, 100%);
     --black: hsl(240, 15%, 9%);
     --paragraph: hsl(0, 0%, 83%);
@@ -19,7 +19,7 @@
     box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
-.card .card__border {
+.card-sec .card__border {
     overflow: hidden;
     pointer-events: none;
 
@@ -38,7 +38,7 @@
     border-radius: 1rem;
 }
 
-.card .card__border::before {
+.card-sec .card__border::before {
     content: "";
     pointer-events: none;
 
@@ -66,12 +66,12 @@
     }
 }
 
-.card .card_title__container .card_title {
+.card-sec .card_title__container .card_title {
     font-size: 1rem;
     color: var(--white);
 }
 
-.card .card_title__container .card_paragraph {
+.card-sec .card_title__container .card_paragraph {
     margin-top: 0.25rem;
     width: 65%;
 
@@ -79,7 +79,7 @@
     color: var(--paragraph);
 }
 
-.card .line {
+.card-sec .line {
     width: 100%;
     height: 0.1rem;
     background-color: var(--line);
@@ -87,19 +87,19 @@
     border: none;
 }
 
-.card .card__list {
+.card-sec .card__list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.card .card__list .card__list_item {
+.card-sec .card__list .card__list_item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.card .card__list .card__list_item .check {
+.card-sec .card__list .card__list_item .check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,19 +111,19 @@
     border-radius: 50%;
 }
 
-.card .card__list .card__list_item .check .check_svg {
+.card-sec .card__list .card__list_item .check .check_svg {
     width: 0.75rem;
     height: 0.75rem;
 
     fill: var(--black);
 }
 
-.card .card__list .card__list_item .list_text {
+.card-sec .card__list .card__list_item .list_text {
     font-size: 0.75rem;
     color: var(--white);
 }
 
-.card .button {
+.card-sec .button {
     cursor: pointer;
 
     padding: 0.5rem;
@@ -146,13 +146,15 @@
 
 }
 
+
 .Hoverr {
     transition: all 1s ease-in-out;
     cursor: pointer;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.884);
 
 }
-   .card-why-us .card{
+
+.card-why-us .card {
     width: 31%;
     text-align: center;
 
@@ -160,53 +162,45 @@
 
 
 
-.glass-circle {
-    background-image: radial-gradient(at 88% 40%,
-            hsla(240, 15%, 9%, 1) 0px,
-            transparent 85%),
-        radial-gradient(at 49% 30%, rgb(0, 0, 0) 0px, transparent 85%),
-        radial-gradient(at 14% 26%, rgb(0, 0, 0) 0px, transparent 85%),
-        radial-gradient(at 0% 64%, hsl(190, 38%, 6%) 0px, transparent 85%),
-        radial-gradient(at 41% 94%, hsl(193, 7%, 24%) 0px, transparent 85%),
-        radial-gradient(at 100% 99%, hsl(0, 0%, 0%) 0px, transparent 85%);
-}
 
 @media (max-width: 700px) {
     .card-why-us {
         flex-direction: column;
 
     }
-       .card-why-us .card {
+
+    .card-why-us .card-sec {
         width: 90%;
-       }
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
     .card-why-us {
         flex-direction: row;
         flex-wrap: wrap;
-gap: 3px;
+        gap: 3px;
 
 
 
     }
 
-    .card-why-us .card {
+    .card-why-us .card-sec {
         width: 80%;
     }
 }
+
 @media (min-width: 900px) and (max-width: 1200px) {
     .card-why-us {
         flex-direction: row;
         flex-wrap: wrap;
-gap: 3px;
+        gap: 3px;
 
 
 
     }
 
-    .card-why-us .card {
+    .card-why-us .card-sec {
         width: 40%;
-     
+
     }
 }

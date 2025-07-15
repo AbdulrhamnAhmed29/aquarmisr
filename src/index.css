@@ -13,12 +13,16 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, rgb(0, 0, 0) 20%, rgb(24, 27, 43) 60%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(135deg, rgb(0, 0, 0) 20%, rgba(54, 87, 95, 0.493) 60%, rgb(0, 0, 0) 100%);
   color: white;
   width: 100%;
 
 
 }
+
+
+
+
 /* navbar  */
 
 /* start header  */

@@ -39,16 +39,7 @@ body {
   width: 100%;
 }
 
-.planss {
-  background-image: radial-gradient(at 88% 40%,
-      hsla(240, 15%, 9%, 1) 0px,
-      transparent 85%),
-    radial-gradient(at 49% 30%, rgb(0, 0, 0) 0px, transparent 85%),
-    radial-gradient(at 14% 26%, rgb(0, 0, 0) 0px, transparent 85%),
-    radial-gradient(at 0% 64%, hsl(190, 38%, 6%) 0px, transparent 85%),
-    radial-gradient(at 41% 94%, hsl(186, 31%, 18%) 0px, transparent 85%),
-    radial-gradient(at 100% 99%, hsl(0, 0%, 0%) 0px, transparent 85%);
-}
+
 
 
 .plan-image {
@@ -59,5 +50,5 @@ height: 100%;
 cursor: pointer;
 }
 .plan-image:hover{
-  transform: scale(1.01);
+  transform: scale(1.05);
 }

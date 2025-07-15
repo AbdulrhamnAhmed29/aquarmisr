@@ -1,0 +1,16 @@
+.omage-app{
+    width: 400px;
+    margin: auto;
+
+}
+Row{
+text-align: center;
+display: flex;
+align-items: center;
+}
+.parent-image-app{
+    text-align: center;
+}
+.fff{
+    display: inline;
+}

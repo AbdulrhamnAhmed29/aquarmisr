@@ -17,23 +17,25 @@ const Navy = () => {
 
   return (
     <>
-
-      <Navbar expand="lg" className=" navbar-dark bg-gradient Container  nav-links" data-aos="fade-right">
+<div className=' parent-nav '>
+  
+      <Navbar expand="lg" className=" navbar-dark bg-gradient   nav-links" data-aos="fade-right">
         <Container >
-          <Navbar.Brand href="#home" className='fw-bold fs-2'>عقار تيك</Navbar.Brand>
+          <Navbar.Brand href="#home" className='fw-bold fs-2'><img src="/images/logo.svg" className='w-75' alt="" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='list' />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="me-auto ">
-              <Nav.Link className='text-white style-links' href="#home">الصفحه الرئيسيه</Nav.Link>
-              <Nav.Link className='text-white style-links' href="#chance">الفرص</Nav.Link>
-              <Nav.Link className='text-white style-links' href="#plans"> المخططات </Nav.Link>
-              <Nav.Link className='text-white style-links' href="#contact"> التواصل </Nav.Link>
+              <Nav.Link className='text-white style-links fs-5' href="/" >الصفحه الرئيسيه</Nav.Link>
+              <Nav.Link className='text-white style-links  fs-5' href="#chance">الفرص</Nav.Link>
+              <Nav.Link className='text-white style-links  fs-5' href="#plans"> العروض </Nav.Link>
+              <Nav.Link className='text-white style-links  fs-5' href="#contact"> التواصل </Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
         </Container>
 
       </Navbar>
+</div>
 
 
 

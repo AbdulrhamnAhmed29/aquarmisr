@@ -1,0 +1,35 @@
+.acord-section {
+    background-color: #000;
+}
+
+.acord-item {
+    background-color: #000 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.acord-item .accordion-header {
+    background-color: #111 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.acord-item .accordion-button {
+    background-color: #111 !important;
+    color: white !important;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.acord-item .accordion-button:not(.collapsed) {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.acord-item .accordion-body {
+    background-color: #000 !important;
+    color: white !important;
+    border-top: 1px solid white;
+}

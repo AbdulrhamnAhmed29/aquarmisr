@@ -1,6 +1,6 @@
 [
   {
- 
+    "id": 1,
     "title": "فيلا فاخرة بالتجمع",
     "price": "3,500,000 جنيه",
     "location": "القاهرة الجديدة",
@@ -14,45 +14,45 @@
     "image": "/images/img(1).jpg"
   },
   {
-    "id": 2,
-    "title": "شقة على النيل",
+    "id": 3,
+    "title": "شقة على الاهرمات",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "الجيزه",
     "image": "/images/OIP (1).jpg"
   },
   {
-    "id": 2,
-    "title": "شقة على النيل",
+    "id": 4,
+    "title": "شقة على الكورنيش",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "عبدالعزيز ال سعود",
     "image": "/images/prop(4).jpg"
   },
   {
-    "id": 2,
+    "id": 5,
     "title": "شقة على النيل",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "المنيل",
     "image": "/images/prop (1).jpg"
   },
   {
-    "id": 2,
-    "title": "شقة على النيل",
+    "id": 6,
+    "title": "شقة فى العاشر من رمضان",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "العاشر من رمضان",
     "image": "/images/prop(5).jpeg"
   },
   {
-    "id": 2,
+    "id": 7,
     "title": "شقة على النيل",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "فيصل",
     "image": "/images/contact.jpg"
   },
   {
-    "id": 2,
-    "title": "شقة على النيل",
+    "id": 8,
+    "title": "شقة على اول الشارع",
     "price": "1,800,000 جنيه",
-    "location": "المعادي",
+    "location": "اكتوبر",
     "image": "/images/property (7).jpg"
   }
 ]
