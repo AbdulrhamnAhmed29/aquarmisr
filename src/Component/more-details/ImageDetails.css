@@ -77,18 +77,3 @@ button:hover {
 
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
-    .card-why-us {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3px;
-
-
-
-    }
-
-    .card-why-us .card {
-        width: 40%;
-
-    }
-}
