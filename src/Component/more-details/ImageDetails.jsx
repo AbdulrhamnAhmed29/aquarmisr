@@ -6,7 +6,10 @@ import AOS from 'aos';
 import Footer from '../footer/Footer';
 
 const ImageDetails = () => {
-    const navigate = useNavigate(); // 
+    const navigate = useNavigate(); //
+    const Handlebook = () => {
+        navigate('/form');
+    };
     const { id } = useParams();
     const { state } = useLocation();
 
@@ -17,13 +20,11 @@ const ImageDetails = () => {
         });
     }, []);
 
+
     if (!state) return <p className='fs-1 text text-center p-5 mt-5'>لا يوجد بيانات </p>;
 
     const { title, price, location, image } = state;
 
-    const Handlebook = () => {
-        navigate('/form');
-    };
 
     return (
         <>
