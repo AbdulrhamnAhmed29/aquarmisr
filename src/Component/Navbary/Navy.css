@@ -16,9 +16,13 @@
 
 
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 500px) {
     .nav-links {
         backdrop-filter: blur(20px);
+     width: 85%;
+     margin-right: 30px;
     }
 
 

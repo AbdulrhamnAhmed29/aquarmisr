@@ -49,6 +49,8 @@ button:hover {
 @media (max-width: 700px) {
     .details {
         flex-direction: column;
+        width: 80%;
+      
     }
 
     .img-parent {

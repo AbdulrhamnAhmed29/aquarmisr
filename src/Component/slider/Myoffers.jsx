@@ -11,6 +11,8 @@ import 'swiper/css/pagination';
 import './Myoffers.css';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import AOS from 'aos';
+
 
 export default function Offer() {
     const [post, setpost] = useState([]);
@@ -20,51 +22,57 @@ export default function Offer() {
             setpost(data);
         })
     }, [])
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,    
+            once: false,       
+        });
+    }, []);
 
 
     return (
         <>
-        <div className='p-5  planss'>
-            <h2 id='plans' className='text text-center  '>العروض</h2>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
-            >
+            <div className='p-5  planss' data-aos="fade-up">
+                <h2 id='plans' className='text text-center  '>العروض</h2>
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
 
-                {post.map((el, index) => (
-                    <SwiperSlide key={index}>
-                        <Link
-                            key={index}
-                            to={`/image/${el.id}`}
-                            state={el}
-                        >
-                            <img src={el.image} className=' w-100 plan-image' />
+                    {post.map((el, index) => (
+                        <SwiperSlide key={index}>
+                            <Link
+                                key={index}
+                                to={`/image/${el.id}`}
+                                state={el}
+                            >
+                                <img src={el.image} className=' w-100 plan-image' />
 
-                        </Link>
+                            </Link>
 
-                    </SwiperSlide>
-                    
-
-                ))}
+                        </SwiperSlide>
 
 
-            </Swiper>
-            
-        </div>
-        <hr />
-        <hr />
+                    ))}
+
+
+                </Swiper>
+
+            </div>
+            <hr />
+            <hr />
         </>
     );
 }

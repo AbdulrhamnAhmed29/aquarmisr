@@ -15,7 +15,7 @@ const ImageDetails = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 3000,
+            duration: 5000,
             once: true,
         });
     }, []);

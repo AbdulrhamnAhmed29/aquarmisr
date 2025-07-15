@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './FlipCard.css'; // لو عندك ستايل خارجي
+import AOS from 'aos';
 
 const FlipCard = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: false,
+        });
+    }, []);
     return (
         <>
             <h2 className='text-center p-5'>اراء عملائنا</h2>
 
             <div className='parent-o container'>
                 <div>
-                    <div className="card ">
+                    <div className="card " data-aos="fade-up">
                         <div className="img">  <img src="/images/option(1).png" alt="" /></div>
                         <h4 className='text-center text-white  '>خديجه  </h4>
                         <p className="info">
@@ -33,7 +40,7 @@ const FlipCard = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="card ">
+                    <div className="card " data-aos="fade-up">
                         <div className="img">  <img src="/images/option(2).png" alt="" /></div>
                         <h4 className='text-center text-white  '> رحيم  </h4>
                         <p className="info">
@@ -60,7 +67,7 @@ const FlipCard = () => {
                 </div>
                 <div>
 
-                    <div className="card ">
+                    <div className="card " data-aos="fade-up">
                         <div className="img">  <img src="/images/option(3).png" alt="" /></div>
                         <h4 className='text-center text-white  '> يونس </h4>
                         <p className="info">

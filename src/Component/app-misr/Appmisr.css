@@ -1,16 +1,35 @@
-.omage-app{
+.omage-app {
     width: 400px;
     margin: auto;
 
 }
-Row{
-text-align: center;
-display: flex;
-align-items: center;
+
+Row {
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
-.parent-image-app{
+
+.parent-image-app {
     text-align: center;
 }
-.fff{
+
+.fff {
     display: inline;
+}
+
+@media (max-width: 500px) {
+    .fff a img {
+        width: 130px;
+    }
+
+    .ffff img {
+        width: 130px;
+
+    }
+    .parent-image-app img{
+        width: 370px;
+    }
+
+
 }
