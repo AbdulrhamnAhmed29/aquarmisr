@@ -17,9 +17,9 @@ const Navy = () => {
 
   return (
     <>
-<div className=' parent-nav '>
+<div className=' parent-nav  '>
   
-      <Navbar expand="lg" className=" navbar-dark bg-gradient   nav-links" data-aos="fade-right">
+      <Navbar expand="lg" className=" navbar-dark bg-gradient container  nav-links" data-aos="fade-right">
         <Container >
           <Navbar.Brand href="#home" className='fw-bold fs-2'><img src="/images/logo.svg" className='w-75' alt="" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='list' />
