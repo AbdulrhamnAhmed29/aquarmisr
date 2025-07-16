@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react'
 import './Footer.css'
-import AOS from 'aos';
 
 
 const Footer = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 3000,
-            once: false,
-        });
-    }, []);
+
     return (
         <div>
-            <footer class="footer" data-aos="fade-up">
+            <footer class="footer" >
                 <div class="container">
                     <div class="footer-section">
                         <h2> <img src="/images/logo.svg" alt="" /></h2>
