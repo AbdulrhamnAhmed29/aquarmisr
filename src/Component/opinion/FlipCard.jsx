@@ -17,7 +17,7 @@ const FlipCard = () => {
                 <div>
                     <div className="card " data-aos="fade-up">
                         <div className="img">  <img src="/images/option(1).png" alt="" /></div>
-                        <h4 className='text-center text-white  '>خديجه  </h4>
+                        <h4 className='text-center text-white  '>رحمه  </h4>
                         <p className="info">
                             "بصراحة عمري ما شوفت منصة عقارية بالدقة دي! أول مرة ألاقي بحث يوصلني للعقار اللي في دماغي من غير لف كتير. المنصة بتفهم السوق كويس، والأسعار مظبوطة، وكل معلومة مكتوبة بمنتهى الاحتراف. واضح إنهم فاهمين المجال وسبقين الكل بخطوة."
                         </p>
