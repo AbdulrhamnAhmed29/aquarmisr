@@ -12,8 +12,8 @@ const Appmisr = () => {
         });
     }, []);
     return (
-        <Container className='pt-5 pb-5'>
-            <Row className="d-flex align-items-center justify-content-between tect-center">
+        <div className='pb-3 pt-3  w-75 mx-auto'>
+            <Row className="d-flex align-items-center justify-content-between text-center bg-danger">
 
                 <Col data-aos="fade-up">
                     <h2 className='text-center fs-1 p-4'>حمل تطبيق عقار يامصر</h2>
@@ -29,7 +29,7 @@ const Appmisr = () => {
                 </Col>
 
             </Row>
-        </Container>
+        </div>
     )
 }
 

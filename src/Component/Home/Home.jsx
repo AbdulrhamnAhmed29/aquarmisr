@@ -7,7 +7,6 @@ import Offer from '../slider/Myoffers'
 import Footer from '../footer/Footer'
 import FlipCard from '../opinion/FlipCard'
 import Appmisr from '../app-misr/Appmisr'
-import Acord from '../According/Acord'
 
 
 
@@ -30,7 +29,6 @@ const Home = () => {
             <Appmisr />
             <hr />
             <hr />
-            <Acord />
             <Footer />
 
 
