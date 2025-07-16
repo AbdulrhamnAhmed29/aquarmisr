@@ -17,7 +17,7 @@ const Navy = () => {
 
   return (
     <>
-<div className=' parent-nav  '>
+<div>
   
       <Navbar expand="lg" className=" navbar-dark bg-gradient  nav-links" data-aos="fade-right">
         <Container >

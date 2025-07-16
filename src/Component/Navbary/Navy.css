@@ -1,24 +1,4 @@
-.nav-links {
-    width: 100%;
-    backdrop-filter: blur(5px);
-
-}
-
-.navs {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
 
-
-@media (max-width: 500px) {
-    .nav-links {
-        backdrop-filter: blur(20px);
-
-
-    }
-
-
-}
