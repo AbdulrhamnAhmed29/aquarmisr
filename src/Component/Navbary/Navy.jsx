@@ -1,25 +1,18 @@
-import React, { useEffect } from 'react'
 import { Container, Navbar, Nav } from "react-bootstrap";
 import './Navy.css';
-import AOS from 'aos';
 
 
 
 
 const Navy = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 3000,  // مدة الحركة بالملي ثانية
-      once: true,      // هل الحركة تظهر مرة واحدة بس ولا مع كل scroll
-    });
-  }, []);
+
 
 
   return (
     <>
 <div>
   
-      <Navbar expand="lg" className=" navbar-dark bg-gradient  nav-links" data-aos="fade-right">
+      <Navbar expand="lg" className=" navbar-dark bg-gradient  nav-links" >
         <Container >
           <Navbar.Brand href="#home" className='fw-bold fs-2'><img src="/images/logo.svg" className='w-75' alt="" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='list' />
