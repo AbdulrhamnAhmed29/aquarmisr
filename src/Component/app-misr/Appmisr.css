@@ -1,4 +1,4 @@
-.omage-app {
+.image-app {
     width: 400px;
     margin: auto;
 
@@ -14,21 +14,20 @@ Row {
     text-align: center;
 }
 
-.fff {
-    display: inline;
-}
+
 
 @media (max-width: 500px) {
     .fff a img {
-        width: 130px;
+        text-align: end !important;
+        width: 200px;
     }
+     .fff {
+        background-color: red;
+     }
 
-    .ffff img {
-        width: 130px;
-
-    }
-    .parent-image-app img{
-        width: 300px;
+  
+    .parent-image-app .image-app {
+width: 260px;
     }
 
 
