@@ -1,7 +1,5 @@
 .nav-links {
     width: 100%;
-    z-index: 99;
-    position: fixed;
     backdrop-filter: blur(5px);
 
 }

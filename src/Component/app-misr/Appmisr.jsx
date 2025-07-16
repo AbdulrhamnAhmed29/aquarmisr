@@ -22,7 +22,6 @@ const Appmisr = () => {
                         <div className='fff'>
                             <a className="in me-3  " target="_blank" href="https://play.google.com/store/apps/details?id=aqar.ya.masr"><img src="https://aqaryamasr.com/assets/front/imgs/in.png" alt="تطبيق ايفون عقار يا مصر" /></a>
                         </div>
-                        <a className="aple me-3  " target="_blank" href="https://apps.apple.com/us/app/%D8%B9%D9%82%D8%A7%D8%B1-%D9%8A%D8%A7-%D9%85%D8%B5%D8%B1/id1572629063"><img src="https://aqaryamasr.com/assets/front/imgs/aple.png" alt="تطبيق اندرويد عقار يا مصر" /></a>
                     </div>
                 </Col>
                 <Col className='parent-image-app' data-aos="fade-up">
