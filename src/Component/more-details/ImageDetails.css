@@ -1,7 +1,7 @@
 .details {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     top: 40px;
@@ -9,18 +9,16 @@
     background-color: black;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
     transition: all 1s ease-in-out;
-    width: 100%;
-    gap: 50px;
+    width: 80%;
+ 
 
 }
 
 
 
 .img-parent {
-    width: 60%;
+    width: 50%;
     height: 400px;
-    margin: auto;
-
 }
 
 .img-parent img {

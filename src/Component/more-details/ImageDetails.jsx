@@ -1,38 +1,40 @@
-import { useParams, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Navy from '../Navbary/Navy';
 import './ImageDetails.css';
 import Footer from '../footer/Footer';
 
 const ImageDetails = () => {
-    const navigate = useNavigate(); //
+    const navigate = useNavigate();
+
     const Handlebook = () => {
-        navigate('/form');
+        const user = JSON.parse(localStorage.getItem("user"));
+        if (user && user.isLoggedIn) {
+            navigate('/formbook'); // صفحة الحجز
+        } else {
+            navigate('/register'); // صفحة التسجيل
+        }
     };
-    const { id } = useParams();
+
     const { state } = useLocation();
-
-
-
 
     if (!state) return <p className='fs-1 text text-center p-5 mt-5'>لا يوجد بيانات </p>;
 
     const { title, price, location, image } = state;
 
-
     return (
         <>
             <Navy />
-            <div className='pb-5 pt-5'>
-                <div className="container my-5 details p-5">
-                    <div className='img-parent '>
-                        <img src={image} className="rounded-4 mb-4" alt={title}  />
+            <div className='pt-5 pb-5'>
+                <div className="container details pt-2 ">
+                    <div className='img-parent rounded-5 pt-2 pb-4'>
+                        <img src={image} alt={title} />
                     </div>
-                    <ul data-aos="fade-right" className='p-1'>
-                        <li className='fs-1'><p><strong>العنوان</strong> : {title}</p></li>
-                        <li className='fs-1'><p><strong>السعر</strong> : {price}</p></li>
-                        <li className='fs-1'><p><strong>الموقع</strong> : {location}</p></li>
-                        <button className='btn bg-black fs-2 book' onClick={Handlebook}>احجز الآن</button>
-                    </ul>
+                    <div data-aos="fade-right" className='text-end '>
+                        <h3 className='title text-white'>{title}</h3>
+                        <p className='desc'>  {price}</p>
+                        <p className='desc'> {location}</p>
+                        <button className='btn bg-black fs-5 book' onClick={Handlebook}>احجز الآن</button>
+                    </div>
                 </div>
             </div>
             <Footer />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 // Import Swiper styles
@@ -15,6 +15,13 @@ import AOS from 'aos';
 
 
 export default function Offer() {
+
+
+    const navigate = useNavigate()
+    const handeldetaild = () => (
+        navigate('/PageDetails')
+    )
+    // json data 
     const [post, setpost] = useState([]);
     useEffect(() => {
         fetch("/json-prop/properties.json").then(res => res.json()).then(data => {
@@ -22,18 +29,22 @@ export default function Offer() {
             setpost(data);
         })
     }, [])
+
+    // animate 
     useEffect(() => {
         AOS.init({
-            duration: 3000,    
-            once: false,       
+            duration: 3000,
+            once: false,
         });
     }, []);
 
 
     return (
         <>
+            {/* card  */}
             <div className='p-5  planss' data-aos="fade-up">
-                <h2 id='plans' className='text text-center  '>العروض</h2>
+                <h2 id='plans' className='text text-center  '> العروض</h2>
+                {/* swiper  */}
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
@@ -62,6 +73,7 @@ export default function Offer() {
 
                             </Link>
 
+
                         </SwiperSlide>
 
 
@@ -69,7 +81,7 @@ export default function Offer() {
 
 
                 </Swiper>
-
+                <button className='btn text-white' onClick={handeldetaild}>عرض المزيد</button>
             </div>
             <hr />
             <hr />
