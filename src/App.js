@@ -11,7 +11,6 @@ import ImageDetails from './Component/more-details/ImageDetails';
 import Form from './Component/login/Form';
 import PageDetails from './Component/Page-details/pageDetails';
 import RegisterForm from './Component/Register/register.jsx';
-import Formbook from './Component/form-book/formbook';
 
 
 const App = () => {
@@ -36,7 +35,6 @@ const App = () => {
               <Route path="/form" element={<Form />} />
               <Route path='/PageDetails' element={<PageDetails />} />
               <Route path='/register' element={<RegisterForm />} />
-              <Route path='/formbook' element={<Formbook />} />
 
             </Routes>
 
