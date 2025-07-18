@@ -6,10 +6,7 @@
     position: relative;
     top: 40px;
     border-radius: 30px;
-    background-color: black;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
-    transition: all 1s ease-in-out;
-    width: 80%;
+
  
 
 }

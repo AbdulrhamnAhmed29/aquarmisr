@@ -36,7 +36,8 @@ const PageDetails = () => {
                 <div className=' parent-page  container mx-auto '>
 
                     {info.map(prop => (
-                        <div className="card">
+                      <div className=' m-2 back-g'>
+                         <div className="card ">
                             <img src={prop.image} className='image' alt={prop.title} />
                             <div className="content">
                                 <a href="#" >
@@ -55,12 +56,14 @@ const PageDetails = () => {
                                     {prop.price}
                                 </p>
 
-                                <a className="action btn" onClick={handleBookingClick}>
+                                <button className="" onClick={handleBookingClick}>
                                     احجز الان
                                     <span aria-hidden="true">→</span>
-                                </a>
+                                </button>
                             </div>
                         </div>
+                      </div>
+            
 
                     ))}
 

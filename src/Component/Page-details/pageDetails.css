@@ -1,14 +1,21 @@
 /* From Uiverse.io by Yaya12085 */
 .card {
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 0.5rem;
-    background-color: #0c0b0b;
+    background-color: #0c0c0c;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
     border: 1px solid transparent;
     border: 1px solid white;
 }
+
 .parent-page {
-padding-top: 150px;
+    padding-top: 150px;
+}
+
+.back-g {
+    height: 420px;
+    padding-top: 5px;
+
 }
 
 .parent-page {
@@ -32,6 +39,8 @@ padding-top: 150px;
     width: 100%;
     height: 150px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
+    border: 1px solid white;
 }
 
 .title {
@@ -47,7 +56,3 @@ padding-top: 150px;
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
-
-
-
-

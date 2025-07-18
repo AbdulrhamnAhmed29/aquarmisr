@@ -12,7 +12,7 @@ const Appmisr = () => {
         });
     }, []);
     return (
-        <div className='pb-3 pt-3  w-75 mx-auto'>
+        <div className='pb-3 pt-3 container w-75 mx-auto'>
             <Row className="d-flex align-items-center justify-content-between text-center">
 
                 <Col data-aos="fade-up">
