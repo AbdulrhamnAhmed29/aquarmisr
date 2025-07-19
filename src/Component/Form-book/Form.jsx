@@ -21,13 +21,13 @@ const FormBook = () => {
         emailjs
             .sendForm(
                 'service_z6dnwx8',        // Service ID
-                'template_30y3n22',       // Template ID
-                form.current,             // Form ref
-                'dEfG2fpwfMmjG-70T'       // Public key
+                'template_30y3n22',      
+                form.current,               
+                'dEfG2fpwfMmjG-70T'         
             )
             .then(() => {
                 alert('تم إرسال الحجز بنجاح ✅');
-                form.current.reset(); // تصفير الفورم
+                form.current.reset(); 
             })
             .catch((error) => {
                 console.error('خطأ في الإرسال:', error);
@@ -57,7 +57,7 @@ const FormBook = () => {
 
                     <input
                         type="text"
-                        name="user_name" // لازم يتطابق مع EmailJS template
+                        name="user_name" 
                         placeholder="الاسم"
                         required
                     />

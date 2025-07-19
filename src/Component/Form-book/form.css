@@ -32,3 +32,13 @@ padding: 30px;    border-radius: 20px;
     border: 1px solid white;
     border-radius: 10px;
 }
+
+@media (max-width: 700px) {
+.parent-foormbook {
+        width: 80%;
+    }
+
+
+
+
+}
