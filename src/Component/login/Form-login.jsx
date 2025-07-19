@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import Navy from '../Navbary/Navy'
-import './Form.css'
+import './Form-login.css'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../footer/Footer'
 
-const Form = () => {
+const FormLogin = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const Form = () => {
             <Navy />
 
             <div className='parent-form'>
-                <form className="form" onSubmit={handleLogin} data-aos="fade-up" >
+                <form className="form bg-gradient" onSubmit={handleLogin} data-aos="fade-up" >
                     <div className="flex-column ">
                         <label htmlFor="email">الايميل</label>
                     </div>
@@ -88,7 +88,6 @@ const Form = () => {
                     <p className="p">
                         ليس لديك حساب؟ <span className="span" onClick={toRegister}>انشاء حساب </span>
                     </p>
-                    <p className="p line">تسجيل الدخول مع جوجل؟</p>
 
                     <div className="flex-row">
                     </div>
@@ -100,4 +99,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default FormLogin

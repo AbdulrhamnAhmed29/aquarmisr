@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './register.css';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../footer/Footer';
 import Navy from '../Navbary/Navy';
+import { Link } from 'react-router-dom';
+import './register.css'
+import AOS from 'aos'
+
 
 const RegisterForm = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
+        ;
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -20,7 +25,7 @@ const RegisterForm = () => {
         const existingUser = users.find(user => user.email === email);
         if (existingUser) {
             alert("هذا الإيميل مسجل بالفعل.");
-       
+
         }
 
         const newUser = {
@@ -37,56 +42,73 @@ const RegisterForm = () => {
 
         navigate("/formbook");
     };
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+    }, []);
 
     return (
         <>
             <Navy />
-            <form className="form-regisster" onSubmit={handleRegister}>
-                <p className="title">Register</p>
-                <p className="message">Signup now and get full access to our app.</p>
+            <div className='parent-register container '>
+                <form className="form-regisster  bg-gradient" onSubmit={handleRegister} data-aos="fade-up">
+                    <p className="title">انشاء حساب</p>
+                    <p className="message">سجّل الآن واحصل على وصول كامل إلى تطبيقنا.</p>
 
-                <div className="flex">
+                    <div className="flex">
+                        <label >
+                            <input
+                                className='input'
+                                type="text"
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                            <span className='p-1'>الاسم</span>
+                        </label>
+                        <label>
+                            <input
+                                className='input'
+                                type="text"
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                            <span className='p-1'>اسم العائله</span>
+                        </label>
+
+
+                    </div>
+
                     <label>
                         <input
-                            type="text"
-                            placeholder="الاسم"
-                            onChange={(e) => setName(e.target.value)}
+                            className='input'
+
+                            type="email"
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <span>Firstname</span>
+                        <span className='p-1'>الايميل</span>
                     </label>
 
                     <label>
-                        <input className="input" type="text" placeholder="" required />
-                        <span>Lastname</span>
+                        <input
+                            className='input'
+
+                            type="password"
+
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                        <span className='p-1'>كلمه السر</span>
                     </label>
-                </div>
 
-                <label>
-                    <input
-                        type="email"
-                        placeholder="الإيميل"
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                    <span>Email</span>
-                </label>
-
-                <label>
-                    <input
-                        type="password"
-                        placeholder="كلمة السر"
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                    <span>Password</span>
-                </label>
-
-                <button type="submit" className='btn'>تسجيل</button>
-                <p className="signin">
-                    Already have an account? <a href="#">Signin</a>
-                </p>
-            </form>
+                    <button type="submit" className='btn'>تسجيل</button>
+                    <p className="signin">
+                        ليس لديك حساب؟ <Link to={'/form-login'} className="span" >تسجيل دخول</Link>
+                    </p>
+                </form>
+            </div>
             <Footer />
         </>
     );

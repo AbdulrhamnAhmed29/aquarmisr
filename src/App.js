@@ -8,10 +8,10 @@ import './index.css'
 // componenet 
 import Home from './/Component/Home/Home';
 import ImageDetails from './Component/more-details/ImageDetails';
-import Form from './Component/login/Form';
 import PageDetails from './Component/Page-details/pageDetails';
 import RegisterForm from './Component/Register/register.jsx';
 import FormBook from './Component/Form-book/Form.jsx';
+import FormLogin from './Component/login/Form-login.jsx';
 
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path="/image/:id" element={<ImageDetails />} />
-              <Route path="/form" element={<Form />} />
+              <Route path="/form-login" element={<FormLogin />} />
               <Route path='/PageDetails' element={<PageDetails />} />
               <Route path='/FormBook' element={<FormBook />} />
 

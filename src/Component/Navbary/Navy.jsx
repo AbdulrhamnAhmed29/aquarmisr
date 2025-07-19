@@ -28,7 +28,7 @@ const Navy = () => {
                 <Link className='text-white style-links link  p-3 fs-5' to={"/FormBook"}> التواصل </Link>
 
               </Nav>
-              <Link to={'/register'} className="link-user link  pt-0"><button className="btn pt-0  me-2 mb-2"> انشاء حساب</button></Link>
+              <Link to={'/register'} className="link-user link  pt-0"><button className="btn pt-0   mb-2"> انشاء حساب</button></Link>
 
             </Navbar.Collapse>
 

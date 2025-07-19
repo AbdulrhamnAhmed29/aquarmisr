@@ -1,0 +1,34 @@
+.parent-foormbook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 100px 0;
+    width: 400px;
+    margin: auto;
+    backdrop-filter: blur(100px);
+}
+
+.form-book {
+padding: 30px;    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
+
+
+
+}
+.mobaile{
+    direction: rtl;
+}
+
+.form-book input {
+
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}

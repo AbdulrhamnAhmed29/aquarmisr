@@ -2,10 +2,11 @@
 .card {
     max-width: 100%;
     border-radius: 0.5rem;
-    background-color: #0c0c0c;
+    background-color: #181717a6;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
     border: 1px solid transparent;
     border: 1px solid white;
+    margin-bottom: 3px;
 }
 
 .parent-page {

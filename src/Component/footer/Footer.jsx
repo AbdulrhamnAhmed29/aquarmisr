@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 
@@ -23,10 +24,10 @@ const Footer = () => {
                     <div class="footer-section">
                         <h2>روابط سريعة</h2>
                         <ul>
-                            <li><a href="#home">الرئيسية</a></li>
-                            <li><a href="#">من نحن</a></li>
-                            <li><a href="#">الخدمات</a></li>
-                            <li><a href="#">تواصل معنا</a></li>
+                            <li><Link className='text-white   ' to={'/'}>الصفحه الرئيسيه </Link></li>
+                            <li><Link className='text-white    ' to={'/PageDetails'}> العروض</Link></li>
+                            <li><Link className='text-white    ' to={"/PageDetails"}> المخططات</Link > </li>
+                            <li> <Link className='text-white   ' to={"/FormBook"}> التواصل </Link> </li>
                         </ul>
                     </div>
 

@@ -3,13 +3,24 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
+    width: 450px;
     padding: 20px;
     border-radius: 20px;
-    position: relative;
-    background-color: #1a1a1a;
     color: #fff;
-    border: 1px solid #333;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
+
+
+}
+
+.parent-register {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 20px 0;
+
 }
 
 .title {
@@ -20,7 +31,7 @@
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
+    color: #ffffff;
 }
 
 .title::before {
@@ -31,6 +42,7 @@
 .title::after {
     width: 18px;
     height: 18px;
+
     animation: pulse 1s linear infinite;
 }
 
@@ -42,13 +54,13 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #00bfff;
+    background-color: #fff;
 }
 
 .message,
 .signin {
     font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(253, 253, 253, 0.7);
 }
 
 .signin {
@@ -56,7 +68,7 @@
 }
 
 .signin a:hover {
-    text-decoration: underline royalblue;
+    text-decoration: underline rgb(116, 121, 134);
 }
 
 .signin a {
@@ -74,26 +86,27 @@
 }
 
 .form-regisster label .input {
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     width: 100%;
     padding: 20px 05px 05px 10px;
     outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
+    border-bottom: 2px solid white;
+    border: 1px solid white;
+    border-radius: 13px;
 }
 
 .form-regisster label .input+span {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.966);
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: 0px;
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
 }
 
-.form-regisster  label .input:placeholder-shown+span {
+.form-regisster label .input:placeholder-shown+span {
     top: 12.5px;
     font-size: 0.9em;
 }
@@ -126,7 +139,7 @@
 }
 
 @keyframes pulse {
-   form-regisster{
+    form-regisster {
         transform: scale(0.9);
         opacity: 1;
     }
@@ -135,4 +148,14 @@
         transform: scale(1.8);
         opacity: 0;
     }
+}
+
+@media (max-width: 700px) {
+    .form {
+        width: 80%;
+    }
+
+
+
+
 }

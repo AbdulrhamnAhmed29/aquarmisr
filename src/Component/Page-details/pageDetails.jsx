@@ -5,6 +5,7 @@ import Footer from '../footer/Footer'
 import './pageDetails.css'
 import { useNavigate } from 'react-router-dom';
 import './pageDetails.css'
+import AOS from 'aos'
 
 
 
@@ -29,14 +30,21 @@ const PageDetails = () => {
             .catch(err => console.error(err));
     }, []);
 
+        useEffect(() => {
+            AOS.init({
+                duration: 3000,
+                once: true,
+            });
+        }, []);
+
     return (
         <>
             <Navy />
-            <section >
+            <section  >
                 <div className=' parent-page  container mx-auto '>
 
                     {info.map(prop => (
-                      <div className=' m-2 back-g'>
+                      <div className=' m-2 back-g' data-aos="fade-up">
                          <div className="card ">
                             <img src={prop.image} className='image' alt={prop.title} />
                             <div className="content">
