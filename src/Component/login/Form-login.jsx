@@ -94,7 +94,7 @@ const FormLogin = () => {
                 </form>
             </div>
 
-            <Footer />
+          
         </>
     )
 }

@@ -51,7 +51,7 @@ const FormBook = () => {
     return (
         <>
             <Navy />
-            <div className='parent-foormbook' data-aos="fade-up">
+            <div className='parent-foormbook' data-aos="fade-up" >
                 <form ref={form} onSubmit={handleSubmit} className="form-book bg-gradient">
                     <h3 className='text-center pb-4'> التواصل مع المالك </h3>
 
@@ -74,18 +74,7 @@ const FormBook = () => {
                         placeholder="الإيميل"
                         required
                     />
-                    <select
-                        name="user_apartment"
-                        className='btn fs-4 border rounded-5'
-                        required
-                    >
-                        <option value="" className='text-white bg-black'>اختر شقة</option>
-                        {apartments.map((apt, index) => (
-                            <option key={index} className='bg-black' value={apt}>
-                                {apt}
-                            </option>
-                        ))}
-                    </select>
+                
                     <textarea
                         className='w-100 mt-3 bg-transparent rounded-3 p-1 text-white'
                         name="message"
@@ -94,7 +83,7 @@ const FormBook = () => {
                     <button type="submit" className="btn">إرسال الحجز</button>
                 </form>
             </div>
-            <Footer />
+            
         </>
     );
 };

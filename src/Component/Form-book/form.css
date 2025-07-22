@@ -2,21 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 140px 0 100px 0;
+    padding: 170px 0 100px 0;
     width: 400px;
     margin: auto;
     backdrop-filter: blur(100px);
+    height: 600px;
 }
 
 .form-book {
-padding: 30px;    border-radius: 20px;
+    padding: 30px;
+    border-radius: 20px;
     border: 1px solid white;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
 
 
 
 }
-.mobaile{
+
+.mobaile {
     direction: rtl;
 }
 
@@ -34,7 +37,7 @@ padding: 30px;    border-radius: 20px;
 }
 
 @media (max-width: 700px) {
-.parent-foormbook {
+    .parent-foormbook {
         width: 80%;
     }
 

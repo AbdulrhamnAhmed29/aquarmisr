@@ -1,8 +1,5 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav,  } from "react-bootstrap";
 import './Navy.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-
 import { Link } from "react-router-dom";
 
 
@@ -24,11 +21,13 @@ const Navy = () => {
               <Nav className="me-auto ">
                 <Link className='text-white style-links link p-3 fs-5' to={'/'}>الصفحه الرئيسيه </Link>
                 <Link className='text-white style-links link  p-3 fs-5' to={'/PageDetails'}> العروض</Link>
-                <Link className='text-white style-links link  p-3  fs-5' to={"/PageDetails"}> المخططات</Link >
                 <Link className='text-white style-links link  p-3 fs-5' to={"/FormBook"}> التواصل </Link>
+                <Link to={'/register'} className="link-user link btn text-white  ms-4 mb-2 bg-setting  "> انشاء حساب </Link>
+
+
 
               </Nav>
-              <Link to={'/register'} className="link-user link  pt-0"><button className="btn pt-0   mb-2"> انشاء حساب</button></Link>
+
 
             </Navbar.Collapse>
 

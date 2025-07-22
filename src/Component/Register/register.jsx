@@ -109,7 +109,7 @@ const RegisterForm = () => {
                     </p>
                 </form>
             </div>
-            <Footer />
+           
         </>
     );
 };

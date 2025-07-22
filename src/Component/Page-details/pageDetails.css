@@ -1,5 +1,5 @@
 /* From Uiverse.io by Yaya12085 */
-.card {
+.card{
     max-width: 100%;
     border-radius: 0.5rem;
     background-color: #181717a6;
@@ -7,53 +7,24 @@
     border: 1px solid transparent;
     border: 1px solid white;
     margin-bottom: 3px;
+    height: 440px; 
+
+}
+.card:hover{
+transform: scale(1.04);
 }
 
 .parent-page {
-    padding-top: 150px;
-}
-
-.back-g {
-    height: 420px;
-    padding-top: 5px;
-
-}
-
-.parent-page {
-
+    padding: 130px 0 0px 0;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.card a {
-    text-decoration: none
-}
-
-.content {
-    padding: 1.1rem;
-}
-
-.image {
-    object-fit: cover;
+.img-aqar {
     width: 100%;
-    height: 150px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.719);
-    border: 1px solid white;
+    height: 160px;
 }
 
-.title {
-    color: #bdbdbd;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-}
-
-.desc {
-    margin-top: 0.5rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
