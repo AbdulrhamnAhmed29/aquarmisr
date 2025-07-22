@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import Navy from '../Navbary/Navy'
 import Footer from '../footer/Footer'
-import './pageDetails.css'
 import { useNavigate } from 'react-router-dom';
-import './pageDetails.css'
 import AOS from 'aos'
+import './pageDetails.css'
 
 
 
@@ -40,43 +39,41 @@ const PageDetails = () => {
   return (
     <>
       <Navy />
-      <section  >
-        <div className=' parent-page  container mx-auto '>
+      <section className='back-g container'>
+        {info.map(prop => (
 
-          {info.map(prop => (
-            <div className=' m-2 back-g' data-aos="fade-up">
-              <div className="card ">
-                <img src={prop.image} className='image' alt={prop.title} />
-                <div className="content">
-                  <a href="#" >
-                    <span className="  text-white">
-                      {prop.title}
-                    </span>
-                  </a>
+          <div className="card  border  " data-aos="fade-up">
+            <img src={prop.image} className='image ' alt={prop.title} />
+            <div className="content ">
+              <a href="#" >
+                <span className="  text-white">
+                  {prop.title}
+                </span>
+              </a>
 
-                  <p className="desc">
-                    {prop.description}
-                  </p>
-                  <p className="desc">
-                    {prop.governorate}
-                  </p>
-                  <p className="desc">
-                    {prop.price}
-                  </p>
+              <p className="desc text-white">
+                {prop.description}
+              </p>
+              <p className="desc text-white">
+                {prop.governorate}
+              </p>
+              <p className="desc text-white">
+                {prop.price}
+              </p>
 
-                  <button className="" onClick={handleBookingClick}>
-                    احجز الان
-                    <span aria-hidden="true">→</span>
-                  </button>
-                </div>
-              </div>
+              <button className="w-100" onClick={handleBookingClick}>
+                احجز الان
+                <span aria-hidden="true">→</span>
+              </button>
             </div>
+          </div>
 
 
-          ))}
-
-        </div>
+        ))}
       </section>
+
+
+
       <Footer />
     </>
   )
